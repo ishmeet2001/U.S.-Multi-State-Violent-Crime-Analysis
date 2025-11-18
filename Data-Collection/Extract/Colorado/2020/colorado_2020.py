@@ -28,6 +28,7 @@ def coerce_keys(df, keys):
             df[key] = df[key].astype(str).apply(lambda x: x.replace('.0', ''))
     return df
 
+# load data from csv files
 def load_and_select_data(file_map):
     """Loads CSV files, ensures robust loading, and returns a dictionary of DataFrames."""
     data = {}
