@@ -1,0 +1,466 @@
+
+PART A: DATA PROFILING & ANALYSIS :
+Objective: To explore and understand the combined crime dataset (2020–2024)
+Dataset Path: hdfs:///user/raa126/dataset_local/combined_2020_2024.csv
+
+1. DATASET OVERVIEW :
+Total Rows: 15,599,912
+Total Columns: 22
+Column Names: ['Offense ID', 'Agency Name', 'County', 'Population', 'Location Name', 'Incident Date', 'Incident Hour', 'Offense Name', 'Offense Category', 'Weapon Name', 'Victim Type', 'Victim Sex', 'Victim Age Group', 'Victim Race', 'Victim Resident Status', 'Offender Sex', 'Victim-Offender Relationship', 'Offender Age', 'Victim Id', 'Offender Race', 'State', 'Year']
+root
+ |-- Offense ID: integer (nullable = true)
+ |-- Agency Name: string (nullable = true)
+ |-- County: string (nullable = true)
+ |-- Population: double (nullable = true)
+ |-- Location Name: string (nullable = true)
+ |-- Incident Date: string (nullable = true)
+ |-- Incident Hour: double (nullable = true)
+ |-- Offense Name: string (nullable = true)
+ |-- Offense Category: string (nullable = true)
+ |-- Weapon Name: string (nullable = true)
+ |-- Victim Type: string (nullable = true)
+ |-- Victim Sex: string (nullable = true)
+ |-- Victim Age Group: string (nullable = true)
+ |-- Victim Race: string (nullable = true)
+ |-- Victim Resident Status: string (nullable = true)
+ |-- Offender Sex: string (nullable = true)
+ |-- Victim-Offender Relationship: string (nullable = true)
+ |-- Offender Age: string (nullable = true)
+ |-- Victim Id: integer (nullable = true)
+ |-- Offender Race: string (nullable = true)
+ |-- State: string (nullable = true)
+ |-- Year: integer (nullable = true)
+
+2. MISSING VALUE SUMMARY :
++----------+-----------+------+----------+-------------+-------------+-------------+------------+----------------+-----------+-----------+----------+----------------+-----------+----------------------+------------+----------------------------+------------+---------+-------------+-----+----+
+|Offense ID|Agency Name|County|Population|Location Name|Incident Date|Incident Hour|Offense Name|Offense Category|Weapon Name|Victim Type|Victim Sex|Victim Age Group|Victim Race|Victim Resident Status|Offender Sex|Victim-Offender Relationship|Offender Age|Victim Id|Offender Race|State|Year|
++----------+-----------+------+----------+-------------+-------------+-------------+------------+----------------+-----------+-----------+----------+----------------+-----------+----------------------+------------+----------------------------+------------+---------+-------------+-----+----+
+|0         |195        |1960  |195       |0            |0            |385130       |0           |0               |11982105   |0          |622213    |622213          |622213     |6547614               |9073686     |9073686                     |9073686     |0        |9073686      |0    |0   |
++----------+-----------+------+----------+-------------+-------------+-------------+------------+----------------+-----------+-----------+----------+----------------+-----------+----------------------+------------+----------------------------+------------+---------+-------------+-----+----+
+
+Numeric Columns: ['Offense ID', 'Population', 'Incident Hour', 'Victim Id', 'Year']
+Categorical Columns: ['Agency Name', 'County', 'Location Name', 'Incident Date', 'Offense Name', 'Offense Category', 'Weapon Name', 'Victim Type', 'Victim Sex', 'Victim Age Group', 'Victim Race', 'Victim Resident Status', 'Offender Sex', 'Victim-Offender Relationship', 'Offender Age', 'Offender Race', 'State']
+
+4. BASIC STATISTICS (NUMERIC COLUMNS) :
++-------+--------------------+------------------+------------------+--------------------+------------------+
+|summary|Offense ID          |Population        |Incident Hour     |Victim Id           |Year              |
++-------+--------------------+------------------+------------------+--------------------+------------------+
+|count  |15599912            |15599717          |15214782          |15599912            |15599912          |
+|mean   |1.9607654387650636E8|1161663.0754721384|12.567936760447832|1.8174393153496647E8|2022.194681162304 |
+|stddev |2.8029755934678797E7|2125947.1400762843|6.895819615518211 |2.7910605444293037E7|1.3815642480159265|
+|min    |144602940           |0.0               |0.0               |130722472           |2020              |
+|max    |246956809           |8299271.0         |23.0              |232478244           |2024              |
++-------+--------------------+------------------+------------------+--------------------+------------------+
+
+5. OUTLIER ANALYSIS :
+Offense ID: 0 potential outliers
+Population: 1151517 potential outliers
+Incident Hour: 0 potential outliers
+Victim Id: 0 potential outliers
+Year: 0 potential outliers
+
+6. UNIQUENESS & CARDINALITY :
+Agency Name: ~2012 unique values (0.0001 of total rows)
+County: ~589 unique values (0.0000 of total rows)
+Location Name: ~44 unique values (0.0000 of total rows)
+Incident Date: ~2253 unique values (0.0001 of total rows)
+Offense Name: ~57 unique values (0.0000 of total rows)
+Offense Category: ~25 unique values (0.0000 of total rows)
+Weapon Name: ~21 unique values (0.0000 of total rows)
+Victim Type: ~9 unique values (0.0000 of total rows)
+Victim Sex: ~4 unique values (0.0000 of total rows)
+Victim Age Group: ~208 unique values (0.0000 of total rows)
+Victim Race: ~7 unique values (0.0000 of total rows)
+Victim Resident Status: ~3 unique values (0.0000 of total rows)
+Offender Sex: ~3 unique values (0.0000 of total rows)
+Victim-Offender Relationship: ~30 unique values (0.0000 of total rows)
+Offender Age: ~202 unique values (0.0000 of total rows)
+Offender Race: ~6 unique values (0.0000 of total rows)
+State: ~5 unique values (0.0000 of total rows)
+
+7. TOP 10 FREQUENT VALUES (CATEGORICAL COLUMNS) :
+
+Column: Agency Name
++-----------+-------+
+|Agency Name|count  |
++-----------+-------+
+|HOUSTON    |1299709|
+|NEW YORK   |1151517|
+|SAN ANTONIO|648666 |
+|HARRIS     |572987 |
+|DALLAS     |545130 |
+|AUSTIN     |382717 |
+|DENVER     |382517 |
+|SEATTLE    |378469 |
+|ALBUQUERQUE|336164 |
+|FORT WORTH |282491 |
++-----------+-------+
+only showing top 10 rows
+
+
+Column: County
++-----------------------------+-------+
+|County                       |count  |
++-----------------------------+-------+
+|NOT SPECIFIED                |1189508|
+|FORT BEND, HARRIS, MONTGOMERY|1041691|
+|KING                         |821567 |
+|HARRIS                       |776264 |
+|BEXAR, MEDINA                |627982 |
+|EL PASO                      |441842 |
+|DENVER                       |383325 |
+|BERNALILLO                   |377978 |
+|PIERCE                       |349367 |
+|TARRANT                      |299197 |
++-----------------------------+-------+
+only showing top 10 rows
+
+Column: Location Name
++----------------------------------+-------+
+|Location Name                     |count  |
++----------------------------------+-------+
+|Residence/Home                    |5969534|
+|Highway/Road/Alley/Street/Sidewalk|2201639|
+|Parking/Drop Lot/Garage           |1813046|
+|Other/Unknown                     |824059 |
+|Department/Discount Store         |587461 |
+|Commercial/Office Building        |429778 |
+|Specialty Store                   |414975 |
+|Grocery/Supermarket               |352610 |
+|Convenience Store                 |320275 |
+|Hotel/Motel/Etc.                  |294620 |
++----------------------------------+-------+
+only showing top 10 rows
+
+Column: Incident Date
++-------------+-----+
+|Incident Date|count|
++-------------+-----+
+|2023-01-01   |13182|
+|2024-01-01   |12814|
+|2023-05-01   |12709|
+|2023-06-01   |12272|
+|2023-09-01   |12237|
+|2023-07-01   |12130|
+|2024-03-01   |12048|
+|2023-03-01   |12017|
+|2023-08-01   |11955|
+|2024-02-01   |11768|
++-------------+-----+
+only showing top 10 rows
+
+Column: Offense Name
++----------------------------------------+-------+
+|Offense Name                            |count  |
++----------------------------------------+-------+
+|Simple Assault                          |2090640|
+|Destruction/Damage/Vandalism of Property|1920915|
+|All Other Larceny                       |1677874|
+|Theft From Motor Vehicle                |1308330|
+|Motor Vehicle Theft                     |1026646|
+|Burglary/Breaking & Entering            |982925 |
+|Shoplifting                             |904736 |
+|Drug/Narcotic Violations                |869288 |
+|Aggravated Assault                      |766016 |
+|Intimidation                            |755766 |
++----------------------------------------+-------+
+only showing top 10 rows
+
+Column: Offense Category
++----------------------------------------+-------+
+|Offense Category                        |count  |
++----------------------------------------+-------+
+|Larceny/Theft Offenses                  |4656264|
+|Assault Offenses                        |3612422|
+|Destruction/Damage/Vandalism of Property|1920915|
+|Drug/Narcotic Offenses                  |1168574|
+|Motor Vehicle Theft                     |1026646|
+|Burglary/Breaking & Entering            |982925 |
+|Fraud Offenses                          |900935 |
+|Weapon Law Violations                   |294184 |
+|Robbery                                 |283140 |
+|Sex Offenses                            |193431 |
++----------------------------------------+-------+
+only showing top 10 rows
+
+Column: Weapon Name
++------------------------+--------+
+|Weapon Name             |count   |
++------------------------+--------+
+|NULL                    |11982105|
+|Personal Weapons        |2263694 |
+|Handgun                 |425527  |
+|Other                   |236183  |
+|Knife/Cutting Instrument|208187  |
+|Firearm                 |194388  |
+|Blunt Object            |88913   |
+|Unknown                 |71439   |
+|Motor Vehicle/Vessel    |42860   |
+|Rifle                   |20008   |
++------------------------+--------+
+only showing top 10 rows
+
+Column: Victim Type
++-----------------------+--------+
+|Victim Type            |count   |
++-----------------------+--------+
+|Individual             |11356228|
+|Business               |2371785 |
+|Society/Public         |1544779 |
+|Government             |176734  |
+|Law Enforcement Officer|68209   |
+|Other                  |36377   |
+|Unknown                |16356   |
+|Religious Organization |16015   |
+|Financial Institution  |13429   |
++-----------------------+--------+
+
+Column: Victim Sex
++----------+-------+
+|Victim Sex|count  |
++----------+-------+
+|M         |5746109|
+|F         |5590421|
+|X         |3553262|
+|NULL      |622213 |
+|U         |87907  |
++----------+-------+
+
+Column: Victim Age Group
++----------------+-------+
+|Victim Age Group|count  |
++----------------+-------+
+|Not Specified   |3553262|
+|NULL            |622213 |
+|30 Years Old    |248988 |
+|31 Years Old    |244018 |
+|32 Years Old    |242312 |
+|29 Years Old    |241664 |
+|28 Years Old    |239369 |
+|27 Years Old    |239307 |
+|33 Years Old    |238419 |
+|25 Years Old    |235001 |
++----------------+-------+
+only showing top 10 rows
+
+Column: Victim Race
++-----------------------------------------+-------+
+|Victim Race                              |count  |
++-----------------------------------------+-------+
+|White                                    |7785882|
+|Not Specified                            |3553262|
+|Black or African American                |2116228|
+|Unknown                                  |961123 |
+|NULL                                     |622213 |
+|Asian                                    |435333 |
+|American Indian or Alaska Native         |93951  |
+|Native Hawaiian or Other Pacific Islander|31920  |
++-----------------------------------------+-------+
+
+Column: Victim Resident Status
++----------------------+-------+
+|Victim Resident Status|count  |
++----------------------+-------+
+|NULL                  |6547614|
+|R                     |6424198|
+|U                     |1427502|
+|N                     |1200598|
++----------------------+-------+
+
+Column: Offender Sex
++------------+-------+
+|Offender Sex|count  |
++------------+-------+
+|NULL        |9073686|
+|M           |3991413|
+|F           |1372085|
+|U           |1162728|
++------------+-------+
+
+Column: Victim-Offender Relationship
++-------------------------------+-------+
+|Victim-Offender Relationship   |count  |
++-------------------------------+-------+
+|NULL                           |9073686|
+|Relationship Unknown           |2011505|
+|Victim Was Stranger            |1256128|
+|Victim Was Boyfriend/Girlfriend|629146 |
+|Victim Was Acquaintance        |576686 |
+|Victim was Otherwise Known     |306032 |
+|Victim Was Spouse              |278601 |
+|Victim Was Parent              |213092 |
+|Victim Was Other Family Member |187462 |
+|Victim was Ex-Spouse           |178963 |
++-------------------------------+-------+
+only showing top 10 rows
+
+Column: Offender Age
++------------+-------+
+|Offender Age|count  |
++------------+-------+
+|NULL        |9073686|
+|Unknown     |1529376|
+|30 Years Old|168904 |
+|25 Years Old|164983 |
+|35 Years Old|150032 |
+|50 Years Old|136439 |
+|32 Years Old|135967 |
+|27 Years Old|128594 |
+|22 Years Old|123670 |
+|31 Years Old|122390 |
++------------+-------+
+only showing top 10 rows
+
+Column: Offender Race
++-----------------------------------------+-------+
+|Offender Race                            |count  |
++-----------------------------------------+-------+
+|NULL                                     |9073686|
+|White                                    |3110836|
+|Black or African American                |1654195|
+|Unknown                                  |1582669|
+|Asian                                    |103242 |
+|American Indian or Alaska Native         |59527  |
+|Native Hawaiian or Other Pacific Islander|15757  |
++-----------------------------------------+-------+
+
+Column: State
++----------+-------+
+|State     |count  |
++----------+-------+
+|Texas     |8413174|
+|Washington|2499965|
+|Colorado  |2018193|
+|NY        |1969210|
+|New Mexico|699370 |
++----------+-------+
+
+8. INCIDENT DATE VALIDATION :
++-------------+-----------+
+|Earliest Date|Latest Date|
++-------------+-----------+
+|    01-APR-20|  31-OCT-20|
++-------------+-----------+
+
++----+-------+
+|Year|  count|
++----+-------+
+|2020|2411328|
+|2021|2886658|
+|2022|3100010|
+|2023|3657509|
+|2024|3544407|
++----+-------+
+
+9. LOGICAL VALIDATION :
+→ Individuals missing Victim Age Group: 0
+→ 'Homicide' offenses reported with no weapon: 0
+
+10. ANALYTICAL INSIGHTS :
+
+→ TOP 10 COUNTIES BY INCIDENTS
++-----------------------------+-------+
+|County                       |count  |
++-----------------------------+-------+
+|NOT SPECIFIED                |1189508|
+|FORT BEND, HARRIS, MONTGOMERY|1041691|
+|KING                         |821567 |
+|HARRIS                       |776264 |
+|BEXAR, MEDINA                |627982 |
+|EL PASO                      |441842 |
+|DENVER                       |383325 |
+|BERNALILLO                   |377978 |
+|PIERCE                       |349367 |
+|TARRANT                      |299197 |
++-----------------------------+-------+
+only showing top 10 rows
+
+→ INCIDENT DISTRIBUTION BY OFFENSE CATEGORY
++----------------------------------------+-------+
+|Offense Category                        |count  |
++----------------------------------------+-------+
+|Larceny/Theft Offenses                  |4656264|
+|Assault Offenses                        |3612422|
+|Destruction/Damage/Vandalism of Property|1920915|
+|Drug/Narcotic Offenses                  |1168574|
+|Motor Vehicle Theft                     |1026646|
+|Burglary/Breaking & Entering            |982925 |
+|Fraud Offenses                          |900935 |
+|Weapon Law Violations                   |294184 |
+|Robbery                                 |283140 |
+|Sex Offenses                            |193431 |
++----------------------------------------+-------+
+only showing top 10 rows
+
+→ WEAPON USAGE DISTRIBUTION
++------------------------+--------+
+|Weapon Name             |count   |
++------------------------+--------+
+|NULL                    |11982105|
+|Personal Weapons        |2263694 |
+|Handgun                 |425527  |
+|Other                   |236183  |
+|Knife/Cutting Instrument|208187  |
+|Firearm                 |194388  |
+|Blunt Object            |88913   |
+|Unknown                 |71439   |
+|Motor Vehicle/Vessel    |42860   |
+|Rifle                   |20008   |
++------------------------+--------+
+only showing top 10 rows
+
+→ VICTIM DEMOGRAPHICS (SEX × RACE)
++----------+-------------------------+-------+
+|Victim Sex|Victim Race              |count  |
++----------+-------------------------+-------+
+|M         |White                    |4041032|
+|F         |White                    |3732493|
+|X         |Not Specified            |3553262|
+|F         |Black or African American|1197845|
+|M         |Black or African American|916629 |
+|NULL      |NULL                     |622213 |
+|M         |Unknown                  |468480 |
+|F         |Unknown                  |420173 |
+|M         |Asian                    |259295 |
+|F         |Asian                    |174971 |
++----------+-------------------------+-------+
+only showing top 10 rows
+
+→ YEARLY TREND OF CRIMES
++----+----------------------------------------+------+
+|Year|Offense Category                        |count |
++----+----------------------------------------+------+
+|2020|Larceny/Theft Offenses                  |733504|
+|2020|Assault Offenses                        |499593|
+|2020|Destruction/Damage/Vandalism of Property|297511|
+|2020|Fraud Offenses                          |182431|
+|2020|Drug/Narcotic Offenses                  |180762|
+|2020|Burglary/Breaking & Entering            |179972|
+|2020|Motor Vehicle Theft                     |141600|
+|2020|Robbery                                 |48786 |
+|2020|Weapon Law Violations                   |36073 |
+|2020|Counterfeiting/Forgery                  |29435 |
+|2020|Sex Offenses                            |27447 |
+|2020|Stolen Property Offenses                |18484 |
+|2020|Kidnapping/Abduction                    |7471  |
+|2020|Arson                                   |6492  |
+|2020|Pornography/Obscene Material            |5344  |
+|2020|Embezzlement                            |3243  |
+|2020|Animal Cruelty                          |3158  |
+|2020|Prostitution Offenses                   |2667  |
+|2020|Homicide Offenses                       |2624  |
+|2020|Extortion/Blackmail                     |2209  |
++----+----------------------------------------+------+
+only showing top 20 rows
+
+11. CORRELATION MATRIX (NUMERIC COLUMNS) :
+Correlation(Offense ID, Population) = 0.264
+Correlation(Offense ID, Incident Hour) = 0.017
+Correlation(Offense ID, Victim Id) = 1.000
+Correlation(Offense ID, Year) = 0.975
+Correlation(Population, Incident Hour) = 0.054
+Correlation(Population, Victim Id) = 0.264
+Correlation(Population, Year) = 0.247
+Correlation(Incident Hour, Victim Id) = 0.017
+Correlation(Incident Hour, Year) = 0.017
+Correlation(Victim Id, Year) = 0.974
