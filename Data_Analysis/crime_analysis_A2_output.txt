@@ -1,0 +1,103 @@
+B1: Crime rate per 100,000 population per state:
++----------+--------------+---------------+------------------+
+|State     |TotalIncidents|TotalPopulation|CrimeRatePer100k  |
++----------+--------------+---------------+------------------+
+|New Mexico|600000        |1410367.0      |42542.11846987344 |
+|Washington|868582        |3894939.0      |22300.272225059238|
+|Colorado  |707504        |4718366.0      |14994.682481180986|
+|NY        |1280954       |1.1255467E7    |11380.727250144308|
+|Texas     |3386263       |3.5873384E7    |9439.485831612652 |
++----------+--------------+---------------+------------------+
+
+
+B2: Top counties for violent crimes in each state:
++--------+------------------------+----------------+
+|State   |County                  |ViolentIncidents|
++--------+------------------------+----------------+
+|Colorado|DENVER                  |72617           |
+|Colorado|EL PASO                 |44374           |
+|Colorado|ADAMS, ARAPAHOE, DOUGLAS|37208           |
+|Colorado|JEFFERSON               |27714           |
+|Colorado|ADAMS                   |22154           |
+|Colorado|LARIMER                 |15921           |
+|Colorado|WELD                    |15794           |
+|Colorado|PUEBLO                  |15179           |
+|Colorado|ARAPAHOE                |13576           |
+|Colorado|MESA                    |11169           |
+|Colorado|BOULDER                 |10660           |
+|Colorado|DOUGLAS                 |10439           |
+|Colorado|ADAMS, JEFFERSON        |9229            |
+|Colorado|DOUGLAS; ADAMS; ARAPAHOE|8998            |
+|Colorado|BOULDER, WELD           |6631            |
+|Colorado|ADAMS, WELD             |3918            |
+|Colorado|GARFIELD                |3344            |
+|Colorado|FREMONT                 |2647            |
+|Colorado|BROOMFIELD              |2123            |
+|Colorado|MONTEZUMA               |2078            |
++--------+------------------------+----------------+
+only showing top 20 rows
+
+B3: Counties with highest weapon-involved crimes:
++--------+------------------------+------------+
+|State   |County                  |WeaponCrimes|
++--------+------------------------+------------+
+|Colorado|DENVER                  |118280      |
+|Colorado|EL PASO                 |108427      |
+|Colorado|ADAMS, ARAPAHOE, DOUGLAS|55680       |
+|Colorado|JEFFERSON               |51330       |
+|Colorado|ADAMS                   |38233       |
+|Colorado|DOUGLAS                 |33277       |
+|Colorado|LARIMER                 |32931       |
+|Colorado|ARAPAHOE                |26178       |
+|Colorado|PUEBLO                  |22819       |
+|Colorado|WELD                    |22368       |
+|Colorado|ADAMS, JEFFERSON        |20637       |
+|Colorado|BOULDER                 |17369       |
+|Colorado|MESA                    |17123       |
+|Colorado|BOULDER, WELD           |16539       |
+|Colorado|DOUGLAS; ADAMS; ARAPAHOE|14114       |
+|Colorado|ADAMS, WELD             |7855        |
+|Colorado|GARFIELD                |5691        |
+|Colorado|BROOMFIELD              |5673        |
+|Colorado|FREMONT                 |5009        |
+|Colorado|MONTROSE                |3473        |
++--------+------------------------+------------+
+only showing top 20 rows
+
+B4: Agencies with most violent incidents:
++--------+----------------+----------------+
+|State   |Agency Name     |ViolentIncidents|
++--------+----------------+----------------+
+|Colorado|DENVER          |72539           |
+|Colorado|AURORA          |46206           |
+|Colorado|COLORADO SPRINGS|33920           |
+|Colorado|LAKEWOOD        |16682           |
+|Colorado|PUEBLO          |14536           |
+|Colorado|THORNTON        |11017           |
+|Colorado|GREELEY         |9444            |
+|Colorado|EL PASO         |8384            |
+|Colorado|FORT COLLINS    |8288            |
+|Colorado|BOULDER         |7707            |
+|Colorado|LONGMONT        |7609            |
+|Colorado|JEFFERSON       |7337            |
+|Colorado|WESTMINSTER     |6791            |
+|Colorado|GRAND JUNCTION  |6427            |
+|Colorado|DOUGLAS         |6059            |
+|Colorado|ADAMS           |5538            |
+|Colorado|COMMERCE CITY   |5038            |
+|Colorado|LOVELAND        |4303            |
+|Colorado|ARVADA          |4272            |
+|Colorado|MESA            |4245            |
++--------+----------------+----------------+
+only showing top 20 rows
+
+B5: States with highest proportion of UNKNOWN fields:
++----------+-------------+---------+-------------------+
+|State     |TotalUnknowns|TotalRows|UnknownRate        |
++----------+-------------+---------+-------------------+
+|NY        |845903       |1280954  |0.6603695370793955 |
+|Washington|324501       |868582   |0.37359857791204515|
+|New Mexico|189991       |600000   |0.31665166666666666|
+|Colorado  |154438       |707504   |0.21828569167100115|
+|Texas     |714424       |3386263  |0.21097711548098894|
++----------+-------------+---------+-------------------+

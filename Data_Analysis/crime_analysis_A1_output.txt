@@ -1,0 +1,106 @@
+Violent vs Non-Violent Offense Categories:
++----------------------------------------+-----------+
+|Offense Category                        |CrimeType  |
++----------------------------------------+-----------+
+|Arson                                   |Non-Violent|
+|Bribery                                 |Non-Violent|
+|Burglary/Breaking & Entering            |Non-Violent|
+|Counterfeiting/Forgery                  |Non-Violent|
+|Destruction/Damage/Vandalism of Property|Non-Violent|
+|Embezzlement                            |Non-Violent|
+|Extortion/Blackmail                     |Non-Violent|
+|Fraud Offenses                          |Non-Violent|
+|Larceny/Theft Offenses                  |Non-Violent|
+|Motor Vehicle Theft                     |Non-Violent|
+|Stolen Property Offenses                |Non-Violent|
+|Assault Offenses                        |Violent    |
+|Homicide Offenses                       |Violent    |
+|Human Trafficking                       |Violent    |
+|Kidnapping/Abduction                    |Violent    |
+|Robbery                                 |Violent    |
+|Sex Offenses                            |Violent    |
+|Sex Offenses, Non-forcible              |Violent    |
++----------------------------------------+-----------+
+
+
+Q1: Top states by number of violent incidents:
++----------+-------------+
+|State     |IncidentCount|
++----------+-------------+
+|Texas     |2232144      |
+|NY        |698959       |
+|Washington|420429       |
+|Colorado  |370230       |
+|New Mexico|360678       |
++----------+-------------+
+
+Q2: Top 10 Offense Categories:
++----------------------------------------+-------+
+|Offense Category                        |Count  |
++----------------------------------------+-------+
+|Assault Offenses                        |3593276|
+|Larceny/Theft Offenses                  |1092052|
+|Destruction/Damage/Vandalism of Property|674319 |
+|Motor Vehicle Theft                     |305067 |
+|Burglary/Breaking & Entering            |272224 |
+|Fraud Offenses                          |256089 |
+|Robbery                                 |221743 |
+|Sex Offenses                            |193210 |
+|Stolen Property Offenses                |90335  |
+|Kidnapping/Abduction                    |49433  |
++----------------------------------------+-------+
+only showing top 10 rows
+
+Q3: Distribution of Offense Names per Offense Category:
++----------------------------------------+------------------------------------------+-------+
+|Offense Category                        |Offense Name                              |Count  |
++----------------------------------------+------------------------------------------+-------+
+|Arson                                   |Arson                                     |11301  |
+|Assault Offenses                        |Simple Assault                            |2133329|
+|Assault Offenses                        |Aggravated Assault                        |749798 |
+|Assault Offenses                        |Intimidation                              |710149 |
+|Bribery                                 |Bribery                                   |969    |
+|Burglary/Breaking & Entering            |Burglary/Breaking & Entering              |272224 |
+|Counterfeiting/Forgery                  |Counterfeiting/Forgery                    |41947  |
+|Destruction/Damage/Vandalism of Property|Destruction/Damage/Vandalism of Property  |674319 |
+|Embezzlement                            |Embezzlement                              |5173   |
+|Extortion/Blackmail                     |Extortion/Blackmail                       |11387  |
+|Fraud Offenses                          |Identity Theft                            |90574  |
+|Fraud Offenses                          |False Pretenses/Swindle/Confidence Game   |74333  |
+|Fraud Offenses                          |Credit Card/Automated Teller Machine Fraud|53220  |
+|Fraud Offenses                          |Impersonation                             |25982  |
+|Fraud Offenses                          |Wire Fraud                                |7120   |
+|Fraud Offenses                          |Hacking/Computer Invasion                 |4288   |
+|Fraud Offenses                          |Welfare Fraud                             |572    |
+|Homicide Offenses                       |Murder and Nonnegligent Manslaughter      |13834  |
+|Homicide Offenses                       |Negligent Manslaughter                    |1857   |
+|Homicide Offenses                       |Justifiable Homicide                      |570    |
++----------------------------------------+------------------------------------------+-------+
+only showing top 20 rows
+
+
+Q4: Crimes with vs without weapons:
++--------------+-------+
+|HasWeapon     |Count  |
++--------------+-------+
+|With Weapon   |6561107|
+|Without Weapon|282196 |
++--------------+-------+
+
+
+Q5: Most frequent Weapon Types:
++------------------------+-------+
+|Weapon Name             |Count  |
++------------------------+-------+
+|Personal Weapons        |5847749|
+|Handgun                 |233910 |
+|Knife/Cutting Instrument|177515 |
+|Firearm                 |110975 |
+|Blunt Object            |84446  |
+|Motor Vehicle/Vessel    |42647  |
+|Asphyxiation            |18643  |
+|Rifle                   |12670  |
+|Handgun (Automatic)     |8018   |
+|Other Firearm           |7105   |
++------------------------+-------+
+only showing top 10 rows
