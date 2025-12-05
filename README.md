@@ -1,4 +1,3 @@
-# Datanauts_CMPT732
 # Multi-State Violent Crime Analytics Pipeline & Dashboard
 
 Website -> https://huggingface.co/spaces/rit0027/crime-analytics
