@@ -7,7 +7,7 @@ This project, completed for CMPT 732: Big Data Lab 1, focuses on building a unif
 The pipeline supports large-scale integration, multi-year trend analysis, demographic insights, geographic hotspot exploration, and predictive modeling. An interactive Streamlit dashboard provides an accessible front end for exploring offenders, victims, offense types, and regional crime patterns.
 
 
-# System Architecture 
+## System Architecture 
 ![Screenshot 2025-12-06 at 2 09 22 AM](https://media.github.sfu.ca/user/5139/files/4f4b7b77-c84d-49a1-b992-3bdb0e677333)
 
 ## Project Structure
@@ -61,7 +61,7 @@ The pipeline supports large-scale integration, multi-year trend analysis, demogr
     
     
 ```
-
+## Understanding the Repository Layout
 
 ### 1. Extract 
 Contains Python scripts for each state and year, used to extract relevant fields from the raw NIBRS CSV files. These scripts standardize column names and output a consistent schema for all state-year datasets.
