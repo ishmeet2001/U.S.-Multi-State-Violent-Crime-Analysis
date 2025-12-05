@@ -2,9 +2,10 @@
 
 Dashboard -> https://huggingface.co/spaces/rit0027/crime-analytics
 
-This project, completed for CMPT 732: Big Data Lab 1, focuses on building a unified analytics pipeline for violent - crime data reported through the FBI’s NIBRS system. The project combines NIBRS data from five states (New York, Texas, Washington, Colorado, and New Mexico) into one consistent dataset for 2020–2024, since each state reports the data differently.
+This project, completed for CMPT 732: Big Data Lab 1, focuses on building a unified analytics pipeline for violent-crime data reported through the FBI’s NIBRS system. Since each state structures and reports NIBRS data differently, the project harmonizes five states - New York, Texas, Washington, Colorado, and New Mexico into a single, consistent dataset covering 2020–2024.
 
-The pipeline supports large scale integration, multi-year trend analysis, demographic insights, geographic hotspot exploration, and predictive modeling. An interactive Streamlit dashboard provides an accessible front end for exploring victim-offender relationship, offense types, and regional crime patterns.
+The pipeline supports large-scale integration, multi-year trend analysis, demographic insights, geographic hotspot exploration, and predictive modeling. An interactive Streamlit dashboard provides an accessible front end for exploring offenders, victims, offense types, and regional crime patterns.
+
 
 ## System Architecture 
 ![Screenshot 2025-12-06 at 2 09 22 AM](https://media.github.sfu.ca/user/5139/files/4f4b7b77-c84d-49a1-b992-3bdb0e677333)
@@ -71,3 +72,14 @@ Contains Python scripts for each state and year, used to extract relevant fields
 
 ### 3. Data-Analysis
 Contains EDA scripts and notebooks. Each team member worked on different parts of the analysis, including temporal trends, demographic patterns, geographic distributions, and offense-type breakdowns.
+
+### 4. Data-Visualization 
+This folder contains all code used to generate the interactive dashboard and prepare model-ready data.
+
+**app.py** – The Streamlit web application that powers the interactive crime dashboard, including maps, charts, filters, and hotspot-prediction visualizations.
+
+**preprocess.py** – Converts the full 1.45 GB incident-level dataset into a compact monthly county-level aggregated file, performing cleaning, feature generation, and harmonization for both the dashboard and the hotspot model.
+
+**PredictiveModelling.ipynb** – A development notebook used for experimenting with feature engineering, evaluating multiple model candidates (including XGBoost and RandomForest), and validating hotspot-classification logic. It also documents model performance comparisons, feature importance analysis, and early prototyping before finalizing the production-ready approach.
+
+**train_hotspot.py** – The final training script that builds the hotspot-prediction model using a time-aware split (train: 2020–2023, test: 2024). It uses a Scikit-Learn RandomForestClassifier (50 trees, max depth 8), chosen for its speed, interpretability, and memory-efficiency compared to heavier models like XGBoost.
