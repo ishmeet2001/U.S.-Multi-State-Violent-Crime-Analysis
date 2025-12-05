@@ -1,10 +1,10 @@
 # Datanauts_CMPT732
-
+# Multi-State Violent Crime Analytics Pipeline & Dashboard
 
 Website -> https://huggingface.co/spaces/rit0027/crime-analytics
 
-
-# Multi-State Violent Crime Analytics Pipeline & Dashboard
+# System Architecture 
+![Screenshot 2025-12-06 at 2 09 22 AM](https://media.github.sfu.ca/user/5139/files/4f4b7b77-c84d-49a1-b992-3bdb0e677333)
 
 ## Project Structure
 
