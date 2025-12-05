@@ -45,7 +45,7 @@ Website -> https://huggingface.co/spaces/rit0027/crime-analytics
     ├── EDA
     │   └── dashboard_data
     ├── app.py
-    ├── predictive_model.py
+    ├── PredictiveModelling.ipynb
     ├── preprocess.py
     ├── requirements.txt
     └── train_hotspot.py
