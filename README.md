@@ -59,3 +59,12 @@ Website -> https://huggingface.co/spaces/rit0027/crime-analytics
 ```
 
 
+### 1. Extract (Data Extraction Scripts)
+Contains Python scripts for each state and year, used to extract relevant fields from the raw NIBRS CSV files. These scripts standardize column names and output a consistent schema for all state-year datasets.
+
+### 2. Transform & Load
+**Merging scripts:** Used to merge datasets state-wise and then combine all states into a single unified multi-year dataset.  
+**Cleaning scripts:** Used to clean, standardize, and transform the merged datasets. Multiple cleaning files exist because the work was divided among team members.
+
+### 3. Data-Analysis
+Contains EDA scripts and notebooks. Each team member worked on different parts of the analysis, including temporal trends, demographic patterns, geographic distributions, and offense-type breakdowns.
