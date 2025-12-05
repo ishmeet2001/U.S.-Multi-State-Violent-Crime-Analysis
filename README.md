@@ -58,7 +58,7 @@ Website -> https://huggingface.co/spaces/rit0027/crime-analytics
 ```
 
 
-### 1. Extract (Data Extraction Scripts)
+### 1. Extract 
 Contains Python scripts for each state and year, used to extract relevant fields from the raw NIBRS CSV files. These scripts standardize column names and output a consistent schema for all state-year datasets.
 
 ### 2. Transform & Load
