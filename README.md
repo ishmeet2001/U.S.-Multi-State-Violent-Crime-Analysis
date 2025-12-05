@@ -2,10 +2,9 @@
 
 Dashboard -> https://huggingface.co/spaces/rit0027/crime-analytics
 
-This project, completed for CMPT 732: Big Data Lab 1, focuses on building a unified analytics pipeline for violent-crime data reported through the FBI’s NIBRS system. Since each state structures and reports NIBRS data differently, the project harmonizes five states - New York, Texas, Washington, Colorado, and New Mexico into a single, consistent dataset covering 2020–2024.
+This project, completed for CMPT 732: Big Data Lab 1, focuses on building a unified analytics pipeline for violent - crime data reported through the FBI’s NIBRS system. The project combines NIBRS data from five states (New York, Texas, Washington, Colorado, and New Mexico) into one consistent dataset for 2020–2024, since each state reports the data differently.
 
-The pipeline supports large-scale integration, multi-year trend analysis, demographic insights, geographic hotspot exploration, and predictive modeling. An interactive Streamlit dashboard provides an accessible front end for exploring offenders, victims, offense types, and regional crime patterns.
-
+The pipeline supports large scale integration, multi-year trend analysis, demographic insights, geographic hotspot exploration, and predictive modeling. An interactive Streamlit dashboard provides an accessible front end for exploring victim-offender relationship, offense types, and regional crime patterns.
 
 ## System Architecture 
 ![Screenshot 2025-12-06 at 2 09 22 AM](https://media.github.sfu.ca/user/5139/files/4f4b7b77-c84d-49a1-b992-3bdb0e677333)
