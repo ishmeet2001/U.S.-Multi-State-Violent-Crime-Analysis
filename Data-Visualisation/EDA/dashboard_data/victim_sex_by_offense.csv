@@ -1,0 +1,55 @@
+Offense Category,Victim Sex,count
+Arson,F,4847
+Arson,M,5950
+Arson,U,504
+Assault Offenses,F,2038113
+Assault Offenses,M,1536867
+Assault Offenses,U,18296
+Bribery,F,548
+Bribery,M,409
+Bribery,U,12
+Burglary/Breaking & Entering,F,127305
+Burglary/Breaking & Entering,M,142665
+Burglary/Breaking & Entering,U,2254
+Counterfeiting/Forgery,F,18401
+Counterfeiting/Forgery,M,21947
+Counterfeiting/Forgery,U,1599
+Destruction/Damage/Vandalism of Property,F,360006
+Destruction/Damage/Vandalism of Property,M,309946
+Destruction/Damage/Vandalism of Property,U,4367
+Embezzlement,F,2230
+Embezzlement,M,2925
+Embezzlement,U,18
+Extortion/Blackmail,F,4046
+Extortion/Blackmail,M,7302
+Extortion/Blackmail,U,39
+Fraud Offenses,F,131915
+Fraud Offenses,M,117910
+Fraud Offenses,U,6264
+Homicide Offenses,F,3876
+Homicide Offenses,M,12323
+Homicide Offenses,U,62
+Human Trafficking,F,2210
+Human Trafficking,M,792
+Human Trafficking,U,172
+Kidnapping/Abduction,F,39231
+Kidnapping/Abduction,M,10085
+Kidnapping/Abduction,U,117
+Larceny/Theft Offenses,F,498090
+Larceny/Theft Offenses,M,583951
+Larceny/Theft Offenses,U,10011
+Motor Vehicle Theft,F,114542
+Motor Vehicle Theft,M,188911
+Motor Vehicle Theft,U,1614
+Robbery,F,78561
+Robbery,M,142214
+Robbery,U,968
+Sex Offenses,F,168736
+Sex Offenses,M,23981
+Sex Offenses,U,493
+"Sex Offenses, Non-forcible",F,4657
+"Sex Offenses, Non-forcible",M,683
+"Sex Offenses, Non-forcible",U,3
+Stolen Property Offenses,F,33711
+Stolen Property Offenses,M,51254
+Stolen Property Offenses,U,5370
