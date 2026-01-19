@@ -6,6 +6,9 @@ This project focuses on building a unified analytics pipeline for violent-crime 
 
 The pipeline supports large-scale integration, multi-year trend analysis, demographic insights, geographic hotspot exploration, and predictive modeling. Our Streamlit dashboard allows users to navigate key insights including victim-offender relationships, time-based crime trends, regional hotspots, demographic patterns and several other interactive charts beyond these core visualizations.
 
+## My Role:
+
+Contributed across extraction, transformation, analysis, and visualization: built Python extract scripts for multiple states (2020–2024) to normalize NIBRS schemas, merged multi-year datasets, cleaned and harmonized fields, and engineered model-ready features. Led EDA on temporal/demographic/geographic trends and built preprocessing that feeds a Streamlit dashboard by aggregating 1.45GB of incidents into monthly county files for fast hotspot analysis.
 
 ## System Architecture 
 ![Screenshot 2025-12-06 at 2 09 22 AM](https://media.github.sfu.ca/user/5139/files/4f4b7b77-c84d-49a1-b992-3bdb0e677333)
